@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px
+}
+
+img {
+    width: 75%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2e0df;
+    padding: 0 1,5rem;
+}
+
+.post {
+    width: 100%;
+    max-width: 98rem;
+    padding: 5rem;
+    background-color: white;
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .3);
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.post-logo {
+    min-width: 35rem;
+    max-width: 35rem;
+    position: relative;
+}
+
+.post-title {
+    display: block;
+    margin: 1.5rem 0 2rem;
+    text-transform: uppercase;
+    color: #007DFFff;
+}
+
+.post-text {
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, .7);
+}
+
+.post-cta {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(61, 152, 250);
+    border-radius: .5rem;
+    text-decoration: none;
+}
+
+.post-cta:hover {
+    background-color: rgb(0, 123, 255);
+}
+
+@media screen and (max-width: 1068px) {
+    .post {
+        max-width: 80rem;
+    }
+
+    .post-logo {
+        min-width: 30rem;
+        max-width: 30rem;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .post {
+        flex-direction: column;
+    }
+
+    .post-logo {
+        min-width: 30%;
+        max-width: 30%;
+    }
+
+    .post-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .post {
+        flex-direction: column;
+    }
+
+    .post-title {
+        font-size: 15px;
+    }
+}
